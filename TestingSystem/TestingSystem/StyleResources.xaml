@@ -1,0 +1,61 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:TestingSystem">
+
+    <Style x:Key="resLabelStyle" TargetType="{x:Type Label}">
+        <Style.Setters>
+            <Setter Property="FontSize" Value="35"/>
+            <Setter Property="FontFamily" Value="Forte"/>
+        </Style.Setters>
+    </Style>
+
+    <LinearGradientBrush x:Key="BackgroundBrush" StartPoint="0.102759,-0.0431519" EndPoint="0.802759,0.913967">
+        <GradientStop Color="#FF808593" Offset="0" />
+        <GradientStop Color="#FFE8EBEC" Offset="1" />
+    </LinearGradientBrush>
+
+    <Style x:Key="myNavigateListBoxStyle" TargetType="{x:Type ListBoxItem}">
+        <Style.Resources>
+            <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightBrushKey}" Color="DimGray"/>
+            <SolidColorBrush x:Name="Brush" x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="DimGray"/>
+        </Style.Resources>
+    </Style>
+
+    <Style x:Key="switchComboBoxStyle" TargetType="{x:Type ComboBoxItem}">
+        <Style.Resources>
+            <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightBrushKey}" Color="DimGray"/>
+            <SolidColorBrush x:Name="Brush" x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="DimGray"/>
+        </Style.Resources>
+    </Style>
+
+    <Style x:Key="menuListBoxStyle" TargetType="{x:Type ListBoxItem}">
+        <Style.Resources>
+            <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightBrushKey}" Color="DimGray"/>
+            <SolidColorBrush x:Name="Brush" x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="DimGray"/>
+        </Style.Resources>
+    </Style>
+
+    <Style x:Key="answerListBoxStyle" TargetType="{x:Type ListBoxItem}">
+        <Style.Resources>
+            <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightBrushKey}" Color="Transparent"/>
+            <SolidColorBrush x:Name="Brush" x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Transparent"/>
+        </Style.Resources>
+    </Style>
+
+
+    <SolidColorBrush x:Name="DimGrayBrush" x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="DimGray"/>
+    <Style x:Key="transparentStyle" TargetType="{x:Type ListBoxItem}">
+        <Style.Resources>
+            <SolidColorBrush x:Name="transparentBrush" x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Transparent"/>
+        </Style.Resources>
+    </Style>
+
+    <Style x:Key="TrueClassStyle" TargetType="{x:Type ListBoxItem}">
+        <Setter Property="Background" Value="#FF66FF44"/>
+        <Style.Triggers>
+            <Trigger Property="IsSelected" Value="True" >
+                <Setter Property="Background" Value="{StaticResource {x:Static SystemColors.HighlightBrushKey}}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>
